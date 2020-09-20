@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
 
-namespace UnitTestProject2
+namespace TAdotNET
 {
     class NewsPage
     {

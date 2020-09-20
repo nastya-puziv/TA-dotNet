@@ -8,7 +8,7 @@ using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 
-namespace UnitTestProject2.Tests
+namespace TAdotNET.Tests
 {
     class BaseTest
     {

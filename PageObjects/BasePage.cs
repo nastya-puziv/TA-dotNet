@@ -5,7 +5,7 @@ using System.Text;
 using SeleniumExtras.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
-namespace UnitTestProject2.PageObjects
+namespace TAdotNET.PageObjects
 {
     class BasePage
     {

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace UnitTestProject2.Tests
+namespace TAdotNET.Tests
 {
     class Test1
     {

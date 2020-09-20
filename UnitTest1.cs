@@ -10,7 +10,7 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.Extensions;
 using System.ComponentModel.DataAnnotations;
 
-namespace UnitTestProject2
+namespace TAdotNET
 {
     [TestClass]
     public class UnitTest1

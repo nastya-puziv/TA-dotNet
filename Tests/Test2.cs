@@ -6,7 +6,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 
-namespace UnitTestProject2.Tests
+namespace TAdotNET.Tests
 {
     class Test2
     {

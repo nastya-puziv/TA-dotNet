@@ -3,9 +3,9 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using System;
-using UnitTestProject2.PageObjects;
+using TAdotNET.PageObjects;
 
-namespace UnitTestProject2
+namespace TAdotNET
 {
     class HomePage : BasePage
     {

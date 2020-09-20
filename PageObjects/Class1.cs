@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnitTestProject2.PageObjects
+namespace TAdotNET.PageObjects
 {
     class Class1
     {
