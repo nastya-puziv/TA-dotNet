@@ -6358,11 +6358,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Анастасія\\Desktop\\UnitTestProject2\\UnitTestProject2.csproj",
-      "projectName": "UnitTestProject2",
-      "projectPath": "C:\\Users\\Анастасія\\Desktop\\UnitTestProject2\\UnitTestProject2.csproj",
+      "projectUniqueName": "C:\\Users\\Анастасія\\source\\repos\\TA-dotNet\\TAdotNET.csproj",
+      "projectName": "TAdotNET",
+      "projectPath": "C:\\Users\\Анастасія\\source\\repos\\TA-dotNet\\TAdotNET.csproj",
       "packagesPath": "C:\\Users\\Анастасія\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Анастасія\\Desktop\\UnitTestProject2\\obj\\",
+      "outputPath": "C:\\Users\\Анастасія\\source\\repos\\TA-dotNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

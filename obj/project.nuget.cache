@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6IcBDl4+hiovwiJikaA6soRdau7okeOI0xSYPqxfivVum4ClkuS3LWofExb7gcNIf4fxXnS4GiEYbjVQDS1GYA==",
+  "dgSpecHash": "iGAuQxx3ZwXR2TEmwE/EVWaPuKTvChC1jctmgJgOIJ1ArijAntwQjM/fR+zqKbmnDz+jE5IXYyfx2bNwulzXAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Анастасія\\Desktop\\UnitTestProject2\\UnitTestProject2.csproj",
+  "projectFilePath": "C:\\Users\\Анастасія\\source\\repos\\TA-dotNet\\TAdotNET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Анастасія\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Анастасія\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
