@@ -9,13 +9,20 @@ using OpenQA.Selenium.Support.UI;
 
 namespace TAdotNET.PageObjects
 {
-    class SearchPage
+   public class SearchPage : BasePage
     {
+        public SearchPage(IWebDriver driver) : base(driver)
+        {
+            
+        }
+
         [FindsBy(How = How.XPath, Using = "//a//span[@aria-hidden='false']")]
         public IWebElement searchedArticle;
-        public string SearchedArticleName()
+
+        public string GetSearchedArticleName()
         {
             return searchedArticle.Text;
         }
+
     }
 }

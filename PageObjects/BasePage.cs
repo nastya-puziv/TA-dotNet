@@ -7,9 +7,9 @@ using OpenQA.Selenium.Support.UI;
 
 namespace TAdotNET.PageObjects
 {
-    class BasePage
+   public class BasePage
     {
-        IWebDriver driver;
+       public IWebDriver driver;
 
         public BasePage(IWebDriver driver)
         {
