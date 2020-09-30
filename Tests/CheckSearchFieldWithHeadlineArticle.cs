@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TAdotNET.PageObjects;
 
 namespace TAdotNET.Tests
 {
@@ -13,17 +14,17 @@ namespace TAdotNET.Tests
         {
             var newHomePage = new HomePage(driver);
             var newNewsPage = new NewsPage(driver);
-
+            var newSearchPage = new SearchPage(driver);
             newHomePage.ClickMenuTab("News");
             newHomePage.ClickOnLaterButton();
 
             newNewsPage.ClickHeadlineArticle();
-            string headlineArticleName = GetNewsPage().GetHeadlineArticleText();
+            string headlineArticleName = newNewsPage.GetHeadlineArticleText();
             newNewsPage.ClickOnSearchField();
             newNewsPage.InputInSearchField(headlineArticleName);
             newNewsPage.SearchFieldEnter();
 
-            Assert.AreEqual(headlineArticleName, GetSearchPage().GetSearchedArticleName());
+            Assert.AreEqual(headlineArticleName, newSearchPage.GetSearchedArticleName());
 
         }
     }

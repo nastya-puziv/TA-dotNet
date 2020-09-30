@@ -12,7 +12,7 @@ namespace TAdotNET.Business_Logic_Layer
    public class BLL
     {
 
-        private static IWebDriver driver = new ChromeDriver();
+        public static IWebDriver driver = new ChromeDriver();
 
         //private HomePage newHomePage = newHomePage;
         //private NewsPage newNewsPage = newNewsPage;
@@ -32,6 +32,15 @@ namespace TAdotNET.Business_Logic_Layer
             newHomePage.ClickMenuTab("News");
             newHomePage.ClickOnLaterButton();
         }
+
+        public string GetHeadlineArticleText()
+        {
+            var newNewsPage = new NewsPage(driver);
+
+           return newNewsPage.GetHeadlineText();
+        }
+
+
         public void GoToSendQuestions()
         {
             var newNewsPage = new NewsPage(driver);
@@ -41,19 +50,6 @@ namespace TAdotNET.Business_Logic_Layer
             newNewsPage.ClickOnCoronavirusStories();
             newNewsPage.ClickOnSendQuestions();
         }
-
-        public void SearchInformation(string searchText, string menuTab)
-        {
-            var newHomePage = new HomePage(driver);
-            var newNewsPage = new NewsPage(driver);
-
-            newHomePage.ClickMenuTab(menuTab);
-            newHomePage.ClickOnLaterButton();
-            newNewsPage.ClickOnSearchField();
-            newNewsPage.InputInSearchField(searchText);
-            newNewsPage.SearchFieldEnter();
-        }
-
         public void SendingCoranavirusForm(string story, string name, string email, string age, string postcode, string number)
         {
             var newHomePage = new HomePage(driver);
@@ -72,6 +68,17 @@ namespace TAdotNET.Business_Logic_Layer
             newNewsPage.ClickOnAgeCheckBox();
             newNewsPage.ClickOnTermsCheckBox();
             newNewsPage.ClickOnSubmitButton();
+        }
+        public void SearchInformation(string searchText, string menuTab)
+        {
+            var newHomePage = new HomePage(driver);
+            var newNewsPage = new NewsPage(driver);
+
+            newHomePage.ClickMenuTab(menuTab);
+            newHomePage.ClickOnLaterButton();
+            newNewsPage.ClickOnSearchField();
+            newNewsPage.InputInSearchField(searchText);
+            newNewsPage.SearchFieldEnter();
         }
     }
 

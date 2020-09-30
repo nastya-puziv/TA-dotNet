@@ -15,17 +15,18 @@ namespace TAdotNET.Tests
         public void CheckNameOfHeadlineArticles()
         {
             var newHomePage = new HomePage(driver);
-
+            var newNewsPage = new NewsPage(driver);
 
             newHomePage.ClickMenuTab("News");
             newHomePage.ClickOnLaterButton();
-            Assert.AreEqual("Trump denies minimising Covid risk: I 'up-played' it", GetNewsPage().GetHeadlineText());
+            Assert.AreEqual("Trump denies minimising Covid risk: I 'up-played' it", newNewsPage.GetHeadlineText());
         }
 
         [TestMethod]
         public void CheckNameOfSecondaryArticles()
         {
-            var newHomePage = new HomePage(driver); 
+            var newHomePage = new HomePage(driver);
+            var newNewsPage = new NewsPage(driver);
 
             newHomePage.ClickMenuTab("News");
             newHomePage.ClickOnLaterButton();
@@ -38,7 +39,7 @@ namespace TAdotNET.Tests
             articlesNames.Add("Barbados to remove Queen as head of state");
 
             int i = 0;
-            foreach (IWebElement element in GetNewsPage().GetArticleList())
+            foreach (IWebElement element in newNewsPage.GetArticleList())
             {
                 Assert.IsTrue(element.Displayed);
                 Assert.IsTrue(element.Text.Contains(articlesNames[i]));
