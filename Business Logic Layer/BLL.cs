@@ -6,16 +6,15 @@ using System.ComponentModel.Design;
 using System.Text;
 using TAdotNET.Elements;
 using TAdotNET.Tests;
+using TAdotNET.PageObjects;
 
 namespace TAdotNET.Business_Logic_Layer
 {
-   public class BLL
+   public class BLL 
     {
-
-        public static IWebDriver driver = new ChromeDriver();
-
-        //private HomePage newHomePage = newHomePage;
-        //private NewsPage newNewsPage = newNewsPage;
+     
+        public static IWebDriver driver;
+        
 
         public void OpenMenuTab(string menuTab)
         {
@@ -40,6 +39,18 @@ namespace TAdotNET.Business_Logic_Layer
            return newNewsPage.GetHeadlineText();
         }
 
+        public List<string> InputArticlesName(string name1,string name2,string name3, string name4, string name5)
+        {
+            List<string> articlesNames = new List<string>();
+
+            articlesNames.Add(name1);
+            articlesNames.Add(name2);
+            articlesNames.Add(name3);
+            articlesNames.Add(name4);
+            articlesNames.Add(name5);
+
+            return articlesNames;
+        }
 
         public void GoToSendQuestions()
         {
