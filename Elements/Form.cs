@@ -12,7 +12,7 @@ namespace TAdotNET.Elements
         {
         }
 
-        public IWebElement GetFormElement(string field) => driver.FindElement(By.XPath($"//input[@placeholder='{field}']"));
+        private IWebElement GetFormElement(string field) => driver.FindElement(By.XPath($"//input[@placeholder='{field}']"));
         public void FillForm(Dictionary<string, string> fields)
         {
             foreach (var key in fields.Keys)

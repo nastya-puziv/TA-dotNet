@@ -16,10 +16,6 @@ namespace TAdotNET.PageObjects
             this.driver = driver;
             PageFactory.InitElements(driver, this);
         }
-        public void Implicitwait(long timeToWait)
-        {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(timeToWait);
-        }
         public void WaitVisibilityOfElement(long timeToWait, IWebElement element) 
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeToWait));
@@ -29,7 +25,5 @@ namespace TAdotNET.PageObjects
         {
             driver.Navigate().Refresh();
         }
-
-
     }
 }

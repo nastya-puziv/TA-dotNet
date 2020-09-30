@@ -9,7 +9,25 @@ using TAdotNET.PageObjects;
 
 namespace TAdotNET
 {
-   public class NewsPage:BasePage
+    public enum ThemesOfNews
+    {
+        Home,
+        Election,
+        Coronavirus,
+        Video,
+        World,
+        UK,
+        Business,
+        Tech,
+        Science,
+        Stories,
+        Entertaiment,
+        Health,
+        TV,
+        Pictures,
+        More
+    }
+    public class NewsPage:BasePage
     {
         public NewsPage(IWebDriver driver) : base(driver)
         {

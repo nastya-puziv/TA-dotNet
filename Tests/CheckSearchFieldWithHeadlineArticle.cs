@@ -11,14 +11,17 @@ namespace TAdotNET.Tests
         [TestMethod]
         public void Test3()
         {
-            GetHomePage().ClickMenuTab("News");
-            GetHomePage().ClickOnLaterButton();
+            var newHomePage = new HomePage(driver);
+            var newNewsPage = new NewsPage(driver);
 
-            GetNewsPage().ClickHeadlineArticle();
+            newHomePage.ClickMenuTab("News");
+            newHomePage.ClickOnLaterButton();
+
+            newNewsPage.ClickHeadlineArticle();
             string headlineArticleName = GetNewsPage().GetHeadlineArticleText();
-            GetNewsPage().ClickOnSearchField();
-            GetNewsPage().InputInSearchField(headlineArticleName);
-            GetNewsPage().SearchFieldEnter();
+            newNewsPage.ClickOnSearchField();
+            newNewsPage.InputInSearchField(headlineArticleName);
+            newNewsPage.SearchFieldEnter();
 
             Assert.AreEqual(headlineArticleName, GetSearchPage().GetSearchedArticleName());
 

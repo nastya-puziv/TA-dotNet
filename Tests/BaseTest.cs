@@ -13,30 +13,30 @@ namespace TAdotNET.Tests
 {
    public class BaseTest
     {
-        public IWebDriver driver;
+        public static IWebDriver driver;
         private static readonly string URL = "https://www.bbc.com";
 
         public IWebDriver GetDriver()
         {
             return driver;
         }
-        public BasePage GetBasePage()
-        {
-            return new BasePage(GetDriver());
-        }
+        //public BasePage GetBasePage()
+        //{
+        //    return new BasePage(GetDriver());
+        //}
 
-        public HomePage GetHomePage()
-        {
-            return new HomePage(GetDriver());
-        }
-        public NewsPage GetNewsPage()
-        {
-            return new NewsPage(GetDriver());
-        }
-        public SearchPage GetSearchPage()
-        {
-            return new SearchPage(GetDriver());
-        }
+        //public HomePage GetHomePage()
+        //{
+        //    return new HomePage(GetDriver());
+        //}
+        //public NewsPage GetNewsPage()
+        //{
+        //    return new NewsPage(GetDriver());
+        //}
+        //public SearchPage GetSearchPage()
+        //{
+        //    return new SearchPage(GetDriver());
+        //}
         [TestInitialize]
         public void SetUp()
         {

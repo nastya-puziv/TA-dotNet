@@ -7,7 +7,18 @@ using TAdotNET.PageObjects;
 
 namespace TAdotNET
 {
-   public class HomePage : BasePage
+    public enum Tabs
+    {
+        News,
+        Sport,
+        Reel,
+        Workife,
+        Travel,
+        Future,
+        Culture,
+        More
+    }
+    public class HomePage : BasePage
     {
         public HomePage(IWebDriver driver) : base(driver)
         {   
